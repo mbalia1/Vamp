@@ -20,6 +20,7 @@ class Game():
 
         #sprites
         self.player = Player((400, 300), self.all_sprites, self.collision_sprites)
+        #create random rectangles derived from the sprite class and place them at random points on the
         for i in range(6):
             x, y = randint(0, WINDOW_WIDTH), randint(0, WINDOW_HEIGHT)
             w, h = randint(60, 100), randint(50, 100)
